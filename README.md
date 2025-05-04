@@ -1,70 +1,75 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rastreador de Satélites - ISS
 
-## Available Scripts
+Este projeto tem como objetivo rastrear a posição da Estação Espacial Internacional (ISS) em tempo real, exibindo sua localização em um mapa interativo. Utiliza a API `open-notify.org` para obter a posição da ISS e a API `wheretheiss.at` para obter informações detalhadas sobre o satélite.
 
-In the project directory, you can run:
+A interface apresenta um mapa interativo (usando o Leaflet), com a posição da ISS marcada. Além disso, o projeto exibe informações como altitude, velocidade, visibilidade e coordenadas no rodapé da página.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Framework para construir a interface de usuário.
+- **Leaflet**: Biblioteca para criar mapas interativos.
+- **Axios**: Biblioteca para realizar requisições HTTP.
+- **CSS**: Para o estilo da aplicação.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- Exibição da posição da ISS em tempo real no mapa.
+- Exibição de informações detalhadas sobre a ISS, como:
+  - Altitude
+  - Velocidade
+  - Coordenadas
+  - Visibilidade
+  - Timestamp
+- Barra de progresso indicando o tempo de atualização da posição.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Executar o Projeto
 
-### `npm run build`
+Siga as instruções abaixo para rodar o projeto localmente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Antes de começar, você precisa ter o **Node.js** e o **npm** instalados na sua máquina. Se não tiver, você pode fazer o download [aqui](https://nodejs.org/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Passo 1: Clonar o repositório
 
-### `npm run eject`
+Clone o repositório para sua máquina local.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/seuusuario/seu-repositorio.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Passo 2: Instalar as dependências
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dentro do diretório do projeto, instale as dependências:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd seu-repositorio
+npm install
+```
 
-## Learn More
+### Passo 3: Rodar o servidor local
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para iniciar o servidor de desenvolvimento:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+O servidor estará disponível em `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Passo 4: Visualizar o Projeto
 
-### Analyzing the Bundle Size
+Abra o navegador e acesse o endereço `http://localhost:3000`. O mapa será exibido, e a ISS será rastreada em tempo real.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Como Contribuir
 
-### Making a Progressive Web App
+1. Faça o fork deste repositório.
+2. Crie uma nova branch para suas mudanças (`git checkout -b minha-feature`).
+3. Faça as alterações necessárias e commit com uma mensagem clara (`git commit -am 'Adiciona nova funcionalidade'`).
+4. Envie para o repositório remoto (`git push origin minha-feature`).
+5. Abra um pull request para revisão.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Licença
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
