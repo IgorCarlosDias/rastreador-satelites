@@ -27,3 +27,31 @@ h1 {
   background: linear-gradient(90deg, #00c6ff, #0072ff);
   transition: width 0.3s ease;
 }
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  padding: 2%;
+  border: #00c6ff solid 2px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.footer-content a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-content strong {
+  color: #00c6ff;
+}

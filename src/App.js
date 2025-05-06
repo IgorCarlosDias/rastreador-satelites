@@ -65,7 +65,7 @@ const App = () => {
       </div>
 
       <button onClick={() => setTravar((v) => !v)}>
-        {travar ? 'Desativar Rastreamento' : 'Ativar Rastreamento'}
+        {travar ? 'Centralizado' : 'Descentralizado'}
       </button>
 
       {posicao && (
@@ -92,6 +92,10 @@ const App = () => {
           <p><strong>Coordenadas:</strong> Lat {info.latitude.toFixed(2)}, Lon {info.longitude.toFixed(2)}</p>
           <p><strong>Visibilidade:</strong> {info.visibility}</p>
           <p><strong>Timestamp:</strong> {new Date(info.timestamp * 1000).toLocaleString()}</p>
+  <div class="footer-content">
+          <p>Desenvolvido por <a href="https://portfolio-aryb.vercel.app/" target="_blank"><strong>Igor Carlos Dias</strong></a></p>
+          <p>Dados fornecidos por <a href="https://wheretheiss.at/" target="_blank"><strong> Where the ISS at?</strong></a></p>
+  </div>
         </footer>
       )}
     </div>
